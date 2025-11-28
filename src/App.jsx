@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import confetti from 'canvas-confetti'
 import './App.css'
 
 function App() {
@@ -46,7 +47,9 @@ function App() {
     const basliqBal = (semFinal + kolFinal) * 3
 
     // Davamiyyət
-    const davamiyyet = 10 - (10 * (Number(absent) || 0) / (Number(totalHours) || 1))
+    const totalHoursNum = Number(totalHours) || 0
+    const absentNum = Number(absent) || 0
+    const davamiyyet = totalHoursNum > 0 ? 10 - (10 * absentNum / totalHoursNum) : 10
 
     // Sərbəst iş
     const serbestBal = Number(serbest) || 0
@@ -55,6 +58,15 @@ function App() {
     const totalPoint = basliqBal + davamiyyet + serbestBal
 
     setResult(totalPoint.toFixed(2))
+
+    // Trigger confetti if score is above 45
+    if (totalPoint >= 45) {
+      confetti({
+        particleCount: 200,
+        spread: 90,
+        origin: { y: 0.6 }
+      })
+    }
   }
 
   const resetForm = () => {
@@ -196,9 +208,6 @@ function App() {
           <div className="result">
             <div className="result-label">Toplam Bal</div>
             <div className="result-score">{result}</div>
-            <div className="result-subtitle">
-              {Number(result) >= 51 ? '✓ Keçdi' : '✗ Kəsildi'}
-            </div>
           </div>
         )}
       </div>
