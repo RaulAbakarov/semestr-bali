@@ -1,6 +1,6 @@
 # Semestr Balı Hesablama (Semester Grade Calculator)
 
-A modern React web application for calculating semester grades in Azerbaijani universities.
+A modern React web application for calculating semester grades in Azerbaijani universities with powerful SEO optimization.
 
 ## Features
 
@@ -10,6 +10,9 @@ A modern React web application for calculating semester grades in Azerbaijani un
 - 🎨 **Beautiful UI** - Modern gradient design with smooth animations
 - 📱 **Responsive** - Works perfectly on mobile and desktop devices
 - ♻️ **Reset Function** - Clear all inputs and start over
+- 🎉 **Confetti Animation** - Celebration effect for scores above 45
+- 📈 **Vercel Analytics** - Track visitors and page views
+- 🔍 **SEO Optimized** - Full meta tags, Open Graph, and Schema.org markup
 
 ## Calculation Formula
 
