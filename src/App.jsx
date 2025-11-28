@@ -11,6 +11,7 @@ function App() {
   const [totalHours, setTotalHours] = useState('')
   const [serbest, setSerbest] = useState('')
   const [result, setResult] = useState(null)
+  const [showPopup, setShowPopup] = useState(false)
 
   useEffect(() => {
     setSemScores(Array(semCount).fill(''))
@@ -58,6 +59,7 @@ function App() {
     const totalPoint = basliqBal + davamiyyet + serbestBal
 
     setResult(totalPoint.toFixed(2))
+    setShowPopup(true)
 
     // Trigger confetti if score is above 45
     if (totalPoint >= 45) {
@@ -78,6 +80,7 @@ function App() {
     setTotalHours('')
     setSerbest('')
     setResult(null)
+    setShowPopup(false)
   }
 
   return (
@@ -211,6 +214,18 @@ function App() {
           </div>
         )}
       </div>
+
+      {/* Popup Modal */}
+      {showPopup && (
+        <div className="popup-overlay" onClick={() => setShowPopup(false)}>
+          <div className="popup-card" onClick={(e) => e.stopPropagation()}>
+            <button className="popup-close" onClick={() => setShowPopup(false)}>×</button>
+            <h2 className="popup-title">Nəticə</h2>
+            <div className="popup-score">{result}</div>
+            <div className="popup-label">Toplam Bal</div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
