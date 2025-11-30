@@ -13,7 +13,12 @@ function Contact() {
 
         <section>
           <h2>📧 Email</h2>
-          <p><a href="mailto:contact@semestr-bali.vercel.app">contact@semestr-bali.vercel.app</a></p>
+          <p><a href="mailto:userr776@proton.me">userr776@proton.me</a></p>
+        </section>
+
+        <section>
+          <h2>💬 WhatsApp</h2>
+          <p><a href="https://wa.me/994513862212" target="_blank" rel="noopener noreferrer">+994 51 386 22 12</a></p>
         </section>
 
         <section>
