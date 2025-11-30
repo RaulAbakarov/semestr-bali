@@ -1,10 +1,10 @@
 .legal-page {
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 20px 10px;
 }
 
 .legal-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   background: white;
   border-radius: 24px;
@@ -66,12 +66,17 @@
 }
 
 @media (max-width: 640px) {
+  .legal-page {
+    padding: 10px 8px;
+  }
+
   .legal-container {
-    padding: 32px 24px;
+    padding: 24px 16px;
+    border-radius: 16px;
   }
 
   .legal-container h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .legal-container h2 {
