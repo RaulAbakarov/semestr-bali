@@ -1,15 +1,7 @@
-.app-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  flex: 1;
+.calculator-wrapper {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .card {
