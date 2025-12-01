@@ -81,10 +81,25 @@
   color: #667eea;
   text-decoration: none;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 4px;
 }
 
 .footer-author a:hover {
   text-decoration: underline;
+}
+
+.instagram-icon {
+  width: 16px;
+  height: 16px;
+  fill: #667eea;
+  transition: fill 0.2s ease;
+}
+
+.footer-author a:hover .instagram-icon {
+  fill: #764ba2;
 }
 
 @media (max-width: 640px) {
