@@ -24,6 +24,7 @@ function Footer() {
           <ul>
             <li><Link to="/privacy">Məxfilik Siyasəti</Link></li>
             <li><Link to="/terms">İstifadə Şərtləri</Link></li>
+            <li><Link to="/copyright">Copyright & DMCA</Link></li>
           </ul>
         </div>
       </div>
