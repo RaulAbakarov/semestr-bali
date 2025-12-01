@@ -30,6 +30,7 @@ function Footer() {
       
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Semestr Balı Hesablama. Bütün hüquqlar qorunur.</p>
+        <p className="footer-author">Created by <a href="https://www.instagram.com/im.rau7/" target="_blank" rel="noopener noreferrer">Raul Abakarov</a></p>
       </div>
     </footer>
   )
