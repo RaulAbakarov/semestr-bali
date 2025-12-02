@@ -218,6 +218,24 @@ function Calculator() {
           </div>
         </div>
       )}
+
+      {/* Mobile Banner Ad */}
+      <div className="mobile-banner-ad">
+        <div dangerouslySetInnerHTML={{
+          __html: `
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '2f7cb02e70aa9c0bde06b18cbd4f737f',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/2f7cb02e70aa9c0bde06b18cbd4f737f/invoke.js"></script>
+          `
+        }} />
+      </div>
     </div>
   )
 }
