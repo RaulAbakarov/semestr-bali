@@ -423,19 +423,3 @@ label {
   }
 }
 
-/* Mobile Banner Ad Styles */
-.mobile-banner-ad {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-  background: #fff;
-  padding: 8px;
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 8px 8px 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
