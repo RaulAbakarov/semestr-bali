@@ -439,8 +439,3 @@ label {
   align-items: center;
 }
 
-@media (min-width: 641px) {
-  .mobile-banner-ad {
-    display: none;
-  }
-}
