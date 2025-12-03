@@ -2,11 +2,11 @@
   "calculator": {
     "title": "Semester Grade Calculator",
     "seminar": "Seminar",
-    "kollokvium": "Quiz",
+    "kollokvium": "Colloquium",
     "selectSeminarCount": "Select number of seminars:",
-    "selectKollokviumCount": "Select number of quizzes:",
+    "selectKollokviumCount": "Select number of colloquiums:",
     "seminarPlaceholder": "Seminar {{number}}",
-    "kollokviumPlaceholder": "Quiz {{number}}",
+    "kollokviumPlaceholder": "Colloquium {{number}}",
     "attendanceSection": "Attendance and Independent Work",
     "absentHours": "Absent hours:",
     "totalHours": "Total course hours:",
@@ -73,7 +73,7 @@
   "faq": {
     "title": "Frequently Asked Questions (FAQ)",
     "q1": "How does this calculator work?",
-    "a1": "Enter your seminar and quiz grades. The calculator automatically calculates the average (Seminar × 0.4 + Quiz × 0.6), multiplies it by 3, and adds attendance and independent work points.",
+    "a1": "Enter your seminar and colloquium grades. The calculator automatically calculates the average (Seminar × 0.4 + Colloquium × 0.6), multiplies it by 3, and adds attendance and independent work points.",
     "q2": "How is attendance calculated?",
     "a2": "Attendance score: 10 - (10 × absent hours / total hours). For example, if you miss 6 out of 60 hours: 10 - (10 × 6/60) = 9 points.",
     "q3": "What is the maximum score?",
