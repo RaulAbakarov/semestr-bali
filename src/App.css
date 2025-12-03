@@ -2,6 +2,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.language-switcher-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .container {
@@ -10,11 +18,18 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  padding-top: 80px;
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 10px;
+    padding-top: 70px;
+  }
+  
+  .language-switcher-container {
+    top: 15px;
+    right: 15px;
   }
 }
 

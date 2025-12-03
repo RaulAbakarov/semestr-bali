@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Calculator from './components/Calculator'
+import LanguageSwitcher from './components/LanguageSwitcher'
 import Footer from './components/Footer'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
@@ -12,6 +13,9 @@ function App() {
   return (
     <Router>
       <div className="app-wrapper">
+        <div className="language-switcher-container">
+          <LanguageSwitcher />
+        </div>
         <div className="container">
           <Routes>
             <Route path="/" element={<Calculator />} />

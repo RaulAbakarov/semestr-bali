@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import confetti from 'canvas-confetti'
 import './Calculator.css'
 
 function Calculator() {
+  const { t } = useTranslation()
   const [semCount, setSemCount] = useState(3)
   const [kolCount, setKolCount] = useState(3)
   const [semScores, setSemScores] = useState(Array(3).fill(''))
@@ -81,16 +83,16 @@ function Calculator() {
       <div className="card">
         <h1 className="title">
           <span className="icon">📊</span>
-          Semestr Balı Hesablama
+          {t('calculator.title')}
         </h1>
 
         <div className="section">
           <div className="section-header">
             <span className="section-icon">📝</span>
-            <h2>Seminar</h2>
+            <h2>{t('calculator.seminar')}</h2>
           </div>
           <div className="form-group">
-            <label>Seminar sayı seç:</label>
+            <label>{t('calculator.selectSeminarCount')}</label>
             <select 
               value={semCount} 
               onChange={(e) => setSemCount(Number(e.target.value))}
@@ -106,7 +108,7 @@ function Calculator() {
               <input
                 key={index}
                 type="number"
-                placeholder={`Seminar ${index + 1}`}
+                placeholder={t('calculator.seminarPlaceholder', { number: index + 1 })}
                 value={score}
                 onChange={(e) => handleSemScoreChange(index, e.target.value)}
                 className="score-input"
@@ -120,10 +122,10 @@ function Calculator() {
         <div className="section">
           <div className="section-header">
             <span className="section-icon">📚</span>
-            <h2>Kollokvium</h2>
+            <h2>{t('calculator.kollokvium')}</h2>
           </div>
           <div className="form-group">
-            <label>Kollokvium sayı seç:</label>
+            <label>{t('calculator.selectKollokviumCount')}</label>
             <select 
               value={kolCount} 
               onChange={(e) => setKolCount(Number(e.target.value))}
@@ -139,7 +141,7 @@ function Calculator() {
               <input
                 key={index}
                 type="number"
-                placeholder={`Kollokvium ${index + 1}`}
+                placeholder={t('calculator.kollokviumPlaceholder', { number: index + 1 })}
                 value={score}
                 onChange={(e) => handleKolScoreChange(index, e.target.value)}
                 className="score-input"
@@ -153,10 +155,10 @@ function Calculator() {
         <div className="section">
           <div className="section-header">
             <span className="section-icon">⏰</span>
-            <h2>Davamiyyət və Sərbəst İş</h2>
+            <h2>{t('calculator.attendanceSection')}</h2>
           </div>
           <div className="form-group">
-            <label>Buraxılan saat:</label>
+            <label>{t('calculator.absentHours')}</label>
             <input
               type="number"
               value={absent}
@@ -167,7 +169,7 @@ function Calculator() {
             />
           </div>
           <div className="form-group">
-            <label>Dərsin ümumi saatı:</label>
+            <label>{t('calculator.totalHours')}</label>
             <input
               type="number"
               value={totalHours}
@@ -178,7 +180,7 @@ function Calculator() {
             />
           </div>
           <div className="form-group">
-            <label>Sərbəst iş (0–10):</label>
+            <label>{t('calculator.independentWork')}</label>
             <input
               type="number"
               value={serbest}
@@ -193,16 +195,16 @@ function Calculator() {
 
         <div className="button-group">
           <button onClick={hesabla} className="btn btn-primary">
-            <span>✓</span> Hesabla
+            <span>✓</span> {t('calculator.calculate')}
           </button>
           <button onClick={resetForm} className="btn btn-secondary">
-            <span>↻</span> Sıfırla
+            <span>↻</span> {t('calculator.reset')}
           </button>
         </div>
 
         {result !== null && (
           <div className="result">
-            <div className="result-label">Toplam Bal</div>
+            <div className="result-label">{t('calculator.totalScore')}</div>
             <div className="result-score">{result}</div>
           </div>
         )}
@@ -212,9 +214,9 @@ function Calculator() {
         <div className="popup-overlay" onClick={() => setShowPopup(false)}>
           <div className="popup-card" onClick={(e) => e.stopPropagation()}>
             <button className="popup-close" onClick={() => setShowPopup(false)}>×</button>
-            <h2 className="popup-title">Nəticə</h2>
+            <h2 className="popup-title">{t('calculator.result')}</h2>
             <div className="popup-score">{result}</div>
-            <div className="popup-label">Toplam Bal</div>
+            <div className="popup-label">{t('calculator.totalScore')}</div>
           </div>
         </div>
       )}
