@@ -5,11 +5,11 @@
 }
 
 .card {
-  background: var(--card-bg);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 24px;
   padding: 40px;
-  box-shadow: 0 20px 60px var(--shadow);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   animation: fadeIn 0.5s ease-out;
 }
 
@@ -27,7 +27,7 @@
 .title {
   font-size: 28px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #2d3748;
   text-align: center;
   margin-bottom: 32px;
   display: flex;
@@ -41,17 +41,17 @@
 }
 
 .section {
-  background: var(--input-bg);
+  background: #f7fafc;
   border-radius: 16px;
   padding: 24px;
   margin-bottom: 20px;
-  border: 2px solid var(--card-border);
+  border: 2px solid #e2e8f0;
   transition: all 0.3s ease;
 }
 
 .section:hover {
-  border-color: var(--input-border);
-  box-shadow: 0 4px 12px var(--shadow);
+  border-color: #cbd5e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .section-header {
@@ -64,7 +64,7 @@
 .section-header h2 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: #4a5568;
   margin: 0;
 }
 
@@ -83,7 +83,7 @@
 label {
   display: block;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: #4a5568;
   margin-bottom: 8px;
   font-size: 14px;
 }
@@ -92,18 +92,17 @@ label {
 .select-input {
   width: 100%;
   padding: 12px 16px;
-  border: 2px solid var(--input-border);
+  border: 2px solid #e2e8f0;
   border-radius: 10px;
   font-size: 16px;
   transition: all 0.2s ease;
-  background: var(--input-bg);
-  color: var(--text-primary);
+  background: white;
 }
 
 .input:focus,
 .select-input:focus {
   outline: none;
-  border-color: var(--input-focus);
+  border-color: #667eea;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
@@ -116,18 +115,17 @@ label {
 
 .score-input {
   padding: 12px;
-  border: 2px solid var(--input-border);
+  border: 2px solid #e2e8f0;
   border-radius: 10px;
   font-size: 16px;
   text-align: center;
   transition: all 0.2s ease;
-  background: var(--input-bg);
-  color: var(--text-primary);
+  background: white;
 }
 
 .score-input:focus {
   outline: none;
-  border-color: var(--input-focus);
+  border-color: #667eea;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
@@ -177,12 +175,12 @@ label {
 }
 
 .btn-secondary {
-  background: var(--card-border);
-  color: var(--text-secondary);
+  background: #e2e8f0;
+  color: #4a5568;
 }
 
 .btn-secondary:hover {
-  background: var(--input-border);
+  background: #cbd5e0;
   transform: translateY(-2px);
 }
 
@@ -339,7 +337,7 @@ label {
 }
 
 .popup-card {
-  background: var(--card-bg);
+  background: white;
   border-radius: 24px;
   padding: 48px;
   min-width: 320px;
@@ -369,7 +367,7 @@ label {
   border: none;
   font-size: 32px;
   cursor: pointer;
-  color: var(--text-muted);
+  color: #999;
   width: 40px;
   height: 40px;
   display: flex;
@@ -381,14 +379,14 @@ label {
 }
 
 .popup-close:hover {
-  background: var(--card-border);
-  color: var(--text-primary);
+  background: #f0f0f0;
+  color: #333;
 }
 
 .popup-title {
   font-size: 24px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #2d3748;
   margin-bottom: 24px;
 }
 
@@ -405,7 +403,7 @@ label {
 
 .popup-label {
   font-size: 18px;
-  color: var(--text-muted);
+  color: #718096;
   font-weight: 600;
   margin-top: 16px;
 }

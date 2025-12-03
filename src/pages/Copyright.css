@@ -9,7 +9,7 @@
 .legal-container li {
   margin-bottom: 8px;
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: #4a5568;
 }
 
 .legal-container ul {
@@ -21,6 +21,6 @@
 }
 
 .legal-container strong {
-  color: var(--text-primary);
+  color: #2d3748;
   font-weight: 600;
 }

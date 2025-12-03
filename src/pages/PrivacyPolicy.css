@@ -6,21 +6,21 @@
 .legal-container {
   max-width: 900px;
   margin: 0 auto;
-  background: var(--card-bg);
+  background: white;
   border-radius: 24px;
   padding: 48px;
-  box-shadow: 0 20px 60px var(--shadow);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 
 .legal-container h1 {
   font-size: 36px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #2d3748;
   margin-bottom: 8px;
 }
 
 .last-updated {
-  color: var(--text-muted);
+  color: #718096;
   font-size: 14px;
   margin-bottom: 32px;
 }
@@ -32,14 +32,14 @@
 .legal-container h2 {
   font-size: 24px;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: #4a5568;
   margin-bottom: 12px;
 }
 
 .legal-container p {
   font-size: 16px;
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: #4a5568;
   margin-bottom: 12px;
 }
 
@@ -54,11 +54,11 @@
 }
 
 .faq-item {
-  background: var(--input-bg);
+  background: #f7fafc;
   border-radius: 12px;
   padding: 24px;
   margin-bottom: 16px;
-  border: 2px solid var(--card-border);
+  border: 2px solid #e2e8f0;
 }
 
 .faq-item h2 {
