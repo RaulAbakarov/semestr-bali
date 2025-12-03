@@ -91,14 +91,16 @@
   text-decoration: underline;
 }
 
-.instagram-icon {
+.instagram-icon,
+.github-icon {
   width: 16px;
   height: 16px;
   fill: #667eea;
   transition: fill 0.2s ease;
 }
 
-.footer-author a:hover .instagram-icon {
+.footer-author a:hover .instagram-icon,
+.footer-author a:hover .github-icon {
   fill: #764ba2;
 }
 
