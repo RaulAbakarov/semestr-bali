@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 import Calculator from './components/Calculator'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import Footer from './components/Footer'
@@ -13,6 +14,7 @@ function App() {
   return (
     <Router>
       <div className="app-wrapper">
+        <Navbar />
         <div className="language-switcher-container">
           <LanguageSwitcher />
         </div>
