@@ -1,3 +1,33 @@
+:root[data-theme="light"] {
+  --bg-gradient-start: #667eea;
+  --bg-gradient-end: #764ba2;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --card-border: #e2e8f0;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --input-bg: white;
+  --input-border: #cbd5e0;
+  --input-focus: #667eea;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-hover: rgba(0, 0, 0, 0.15);
+}
+
+:root[data-theme="dark"] {
+  --bg-gradient-start: #1a202c;
+  --bg-gradient-end: #2d3748;
+  --card-bg: rgba(45, 55, 72, 0.95);
+  --card-border: #4a5568;
+  --text-primary: #f7fafc;
+  --text-secondary: #e2e8f0;
+  --text-muted: #a0aec0;
+  --input-bg: #2d3748;
+  --input-border: #4a5568;
+  --input-focus: #667eea;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --shadow-hover: rgba(0, 0, 0, 0.5);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +40,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
   min-height: 100vh;
   padding: 0;
+  transition: background 0.3s ease;
 }
 
 #root {

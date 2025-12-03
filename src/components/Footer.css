@@ -1,9 +1,9 @@
 .footer {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--card-bg);
   backdrop-filter: blur(10px);
   margin-top: 60px;
   padding: 40px 20px 20px;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--card-border);
 }
 
 .footer-content {
@@ -18,7 +18,7 @@
 .footer-section h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #2d3748;
+  color: var(--text-primary);
   margin-bottom: 12px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
@@ -29,12 +29,12 @@
 .footer-section h4 {
   font-size: 18px;
   font-weight: 600;
-  color: #2d3748;
+  color: var(--text-primary);
   margin-bottom: 16px;
 }
 
 .footer-section p {
-  color: #718096;
+  color: var(--text-muted);
   font-size: 14px;
   line-height: 1.6;
 }
@@ -50,7 +50,7 @@
 }
 
 .footer-section ul li a {
-  color: #4a5568;
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 14px;
   transition: color 0.2s ease;
@@ -63,11 +63,11 @@
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--card-border);
 }
 
 .footer-bottom p {
-  color: #718096;
+  color: var(--text-muted);
   font-size: 14px;
   margin: 0;
 }
