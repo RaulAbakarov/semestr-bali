@@ -1,35 +1,42 @@
+import { useTranslation } from 'react-i18next'
 import './PrivacyPolicy.css'
 
 function PrivacyPolicy() {
+  const { t } = useTranslation()
+  
   return (
     <div className="legal-page">
       <div className="legal-container">
-        <h1>Məxfilik Siyasəti</h1>
-        <p className="last-updated">Son yenilənmə: 30 Noyabr 2025</p>
+        <h1>{t('privacy.title')}</h1>
+        <p className="last-updated">{t('privacy.lastUpdated')}</p>
 
         <section>
-          <h2>1. Məlumat Toplama</h2>
-          <p>Semestr Balı Hesablama veb saytı heç bir şəxsi məlumat toplamır və saxlamır. Bütün hesablamalar brauzerinizdə yerli olaraq həyata keçirilir.</p>
+          <p>{t('privacy.intro')}</p>
         </section>
 
         <section>
-          <h2>2. Kuki (Cookies)</h2>
-          <p>Saytımız yalnız analitika məqsədləri üçün Vercel Analytics istifadə edir. Bu, anonim istifadəçi statistikası toplayır və heç bir şəxsi məlumat saxlamır.</p>
+          <h2>{t('privacy.section1Title')}</h2>
+          <p>{t('privacy.section1Content')}</p>
         </section>
 
         <section>
-          <h2>3. Məlumatların Saxlanması</h2>
-          <p>Daxil etdiyiniz bütün məlumatlar (seminar, kollokvium balları və s.) yalnız sizin cihazınızda qalır və heç bir serverə göndərilmir.</p>
+          <h2>{t('privacy.section2Title')}</h2>
+          <p>{t('privacy.section2Content')}</p>
         </section>
 
         <section>
-          <h2>4. Üçüncü Tərəf Xidmətləri</h2>
-          <p>Saytımız Vercel platformasında hostinq olunur və Vercel Analytics istifadə edir. Bu xidmətlərin öz məxfilik siyasətləri var.</p>
+          <h2>{t('privacy.section3Title')}</h2>
+          <p>{t('privacy.section3Content')}</p>
         </section>
 
         <section>
-          <h2>5. Əlaqə</h2>
-          <p>Məxfilik siyasəti ilə bağlı suallarınız varsa, bizimlə əlaqə saxlaya bilərsiniz.</p>
+          <h2>{t('privacy.section4Title')}</h2>
+          <p>{t('privacy.section4Content')}</p>
+        </section>
+
+        <section>
+          <h2>{t('privacy.section5Title')}</h2>
+          <p>{t('privacy.section5Content')}</p>
         </section>
       </div>
     </div>

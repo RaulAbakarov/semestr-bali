@@ -15,13 +15,14 @@ i18n
       en: { translation: en },
       ru: { translation: ru }
     },
+    lng: 'az',
     fallbackLng: 'az',
     supportedLngs: ['az', 'en', 'ru'],
     interpolation: {
       escapeValue: false
     },
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['localStorage', 'cookie', 'sessionStorage'],
       caches: ['localStorage']
     }
   })

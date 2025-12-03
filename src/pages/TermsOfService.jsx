@@ -1,35 +1,47 @@
+import { useTranslation } from 'react-i18next'
 import './TermsOfService.css'
 
 function TermsOfService() {
+  const { t } = useTranslation()
+  
   return (
     <div className="legal-page">
       <div className="legal-container">
-        <h1>İstifadə Şərtləri</h1>
-        <p className="last-updated">Son yenilənmə: 30 Noyabr 2025</p>
+        <h1>{t('terms.title')}</h1>
+        <p className="last-updated">{t('terms.lastUpdated')}</p>
 
         <section>
-          <h2>1. Xidmətin İstifadəsi</h2>
-          <p>Semestr Balı Hesablama pulsuz təhsil alətdir. Saytdan istifadə etməklə bu şərtləri qəbul etmiş olursunuz.</p>
+          <p>{t('terms.intro')}</p>
         </section>
 
         <section>
-          <h2>2. Məsuliyyət</h2>
-          <p>Hesablama nəticələri yalnızca məlumat məqsədləri üçündür. Dəqiqliyi təmin etməyə çalışsaq da, rəsmi qiymətləndirmə üçün universitetinizin qaydalarına müraciət edin.</p>
+          <h2>{t('terms.section1Title')}</h2>
+          <p>{t('terms.section1Content')}</p>
         </section>
 
         <section>
-          <h2>3. Zəmanət Yoxdur</h2>
-          <p>Xidmət "olduğu kimi" təqdim olunur. Hesablama səhvləri və ya texniki problemlər üçün məsuliyyət daşımırıq.</p>
+          <h2>{t('terms.section2Title')}</h2>
+          <p>{t('terms.section2Content')}</p>
         </section>
 
         <section>
-          <h2>4. Dəyişikliklər</h2>
-          <p>Bu şərtləri istənilən vaxt xəbərdarlıq etmədən dəyişdirmək hüququnu özümüzdə saxlayırıq.</p>
+          <h2>{t('terms.section3Title')}</h2>
+          <p>{t('terms.section3Content')}</p>
         </section>
 
         <section>
-          <h2>5. Əlaqə</h2>
-          <p>İstifadə şərtləri ilə bağlı suallarınız varsa, bizimlə əlaqə saxlayın.</p>
+          <h2>{t('terms.section4Title')}</h2>
+          <p>{t('terms.section4Content')}</p>
+        </section>
+
+        <section>
+          <h2>{t('terms.section5Title')}</h2>
+          <p>{t('terms.section5Content')}</p>
+        </section>
+
+        <section>
+          <h2>{t('terms.section6Title')}</h2>
+          <p>{t('terms.section6Content')}</p>
         </section>
       </div>
     </div>
