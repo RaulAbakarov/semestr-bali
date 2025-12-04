@@ -23,7 +23,7 @@
     "faqA1": "The calculator works according to the standard grading system of universities in Azerbaijan. Formula: (Seminar average × 0.4 + Colloquium average × 0.6) × 3 + Attendance (0-10) + Independent work (0-10). Maximum score is 50.",
     "faqQ2": "How is the attendance score calculated?",
     "faqA2": "The attendance system works based on rules for absent hours. Each course has specific allowed absence limits and score tables based on total hours (30, 45, 60, 75, 90, 105). For example, in a 60-hour course: 1 absence=10 points, 2-3 absences=9 points, 4-7 absences=8 points. If you have 8 or more absences, you are not allowed to take the exam.",
-    "faqQ3": "How are seminar and colloquium scores considered?"
+    "faqQ3": "How are seminar and colloquium scores considered?",
     "faqA3": "The average of seminar grades is multiplied by 0.4, while the average of colloquium grades is multiplied by 0.6. This shows that colloquiums have more weight. Then these two numbers are added and multiplied by 3 to get a maximum of 30 points.",
     "faqQ4": "Which universities is this tool suitable for?",
     "faqA4": "This calculator is designed for the standard grading system of universities in Azerbaijan. It is compatible with the same grading system applied at ADU, BSU, ADNSU, UNEC, and other state universities. If your university uses a different system, results may vary.",
