@@ -151,6 +151,20 @@ label {
   font-size: 14px;
 }
 
+.error-message {
+  background: #fed7d7;
+  border: 2px solid #fc8181;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  color: #c53030;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .button-group {
   display: grid;
   grid-template-columns: 2fr 1fr;

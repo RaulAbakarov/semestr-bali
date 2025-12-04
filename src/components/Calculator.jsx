@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import confetti from 'canvas-confetti'
+import { calculateAttendance } from '../utils/attendanceTable'
 import './Calculator.css'
 
 function Calculator() {
@@ -10,11 +11,12 @@ function Calculator() {
   const [semScores, setSemScores] = useState(Array(3).fill(''))
   const [kolScores, setKolScores] = useState(Array(3).fill(''))
   const [absent, setAbsent] = useState('')
-  const [totalHours, setTotalHours] = useState('')
+  const [totalHours, setTotalHours] = useState('60')
   const [serbest, setSerbest] = useState('')
   const [result, setResult] = useState(null)
   const [showPopup, setShowPopup] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
+  const [attendanceError, setAttendanceError] = useState(null)
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -53,7 +55,19 @@ function Calculator() {
 
     const totalHoursNum = Number(totalHours) || 0
     const absentNum = Number(absent) || 0
-    const davamiyyet = totalHoursNum > 0 ? 10 - (10 * absentNum / totalHoursNum) : 10
+    
+    // Use rule-based attendance calculation
+    const attendanceResult = calculateAttendance(totalHoursNum, absentNum)
+    
+    if (!attendanceResult.allowedToExam) {
+      setAttendanceError(attendanceResult.message)
+      setResult(null)
+      setShowPopup(false)
+      return
+    }
+    
+    setAttendanceError(null)
+    const davamiyyet = attendanceResult.score
 
     const serbestBal = Number(serbest) || 0
 
@@ -77,10 +91,11 @@ function Calculator() {
     setSemScores(Array(3).fill(''))
     setKolScores(Array(3).fill(''))
     setAbsent('')
-    setTotalHours('')
+    setTotalHours('60')
     setSerbest('')
     setResult(null)
     setShowPopup(false)
+    setAttendanceError(null)
   }
 
   return (
@@ -168,6 +183,21 @@ function Calculator() {
             <h2>{t('calculator.attendanceSection')}</h2>
           </div>
           <div className="form-group">
+            <label>{t('calculator.totalHours')}</label>
+            <select
+              value={totalHours}
+              onChange={(e) => setTotalHours(e.target.value)}
+              className="select-input"
+            >
+              <option value="30">30</option>
+              <option value="45">45</option>
+              <option value="60">60</option>
+              <option value="75">75</option>
+              <option value="90">90</option>
+              <option value="105">105</option>
+            </select>
+          </div>
+          <div className="form-group">
             <label>{t('calculator.absentHours')}</label>
             <input
               type="number"
@@ -178,17 +208,11 @@ function Calculator() {
               min="0"
             />
           </div>
-          <div className="form-group">
-            <label>{t('calculator.totalHours')}</label>
-            <input
-              type="number"
-              value={totalHours}
-              onChange={(e) => setTotalHours(e.target.value)}
-              className="input"
-              placeholder="0"
-              min="0"
-            />
-          </div>
+          {attendanceError && (
+            <div className="error-message">
+              ⚠️ {attendanceError}
+            </div>
+          )}
           <div className="form-group">
             <label>{t('calculator.independentWork')}</label>
             <input
