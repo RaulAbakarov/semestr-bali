@@ -16,7 +16,7 @@ function Calculator() {
   const [result, setResult] = useState(null)
   const [showPopup, setShowPopup] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
-  const [attendanceError, setAttendanceError] = useState(null)
+  const [showErrorPopup, setShowErrorPopup] = useState(false)
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -60,13 +60,12 @@ function Calculator() {
     const attendanceResult = calculateAttendance(totalHoursNum, absentNum)
     
     if (!attendanceResult.allowedToExam) {
-      setAttendanceError(attendanceResult.message)
+      setShowErrorPopup(true)
       setResult(null)
       setShowPopup(false)
       return
     }
     
-    setAttendanceError(null)
     const davamiyyet = attendanceResult.score
 
     const serbestBal = Number(serbest) || 0
@@ -95,7 +94,7 @@ function Calculator() {
     setSerbest('')
     setResult(null)
     setShowPopup(false)
-    setAttendanceError(null)
+    setShowErrorPopup(false)
   }
 
   return (
@@ -208,11 +207,6 @@ function Calculator() {
               min="0"
             />
           </div>
-          {attendanceError && (
-            <div className="error-message">
-              ⚠️ {attendanceError}
-            </div>
-          )}
           <div className="form-group">
             <label>{t('calculator.independentWork')}</label>
             <input
@@ -251,6 +245,17 @@ function Calculator() {
             <h2 className="popup-title">{t('calculator.result')}</h2>
             <div className="popup-score">{result}</div>
             <div className="popup-label">{t('calculator.totalScore')}</div>
+          </div>
+        </div>
+      )}
+
+      {showErrorPopup && (
+        <div className="popup-overlay" onClick={() => setShowErrorPopup(false)}>
+          <div className="popup-card error-popup" onClick={(e) => e.stopPropagation()}>
+            <button className="popup-close" onClick={() => setShowErrorPopup(false)}>×</button>
+            <div className="error-icon">⚠️</div>
+            <h2 className="popup-title error-title">Not Allowed to Exam</h2>
+            <p className="error-description">You have exceeded the maximum allowed absences for this course. You are not allowed to take the exam.</p>
           </div>
         </div>
       )}
