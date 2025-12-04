@@ -14,6 +14,11 @@ function Calculator() {
   const [serbest, setSerbest] = useState('')
   const [result, setResult] = useState(null)
   const [showPopup, setShowPopup] = useState(false)
+  const [openFaq, setOpenFaq] = useState(null)
+
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index)
+  }
 
   useEffect(() => {
     setSemScores(Array(semCount).fill(''))
@@ -80,6 +85,11 @@ function Calculator() {
 
   return (
     <div className="calculator-wrapper">
+      {/* Introduction Section */}
+      <div className="intro-section">
+        <p className="intro-text">{t('calculator.intro')}</p>
+      </div>
+
       <div className="card">
         <h1 className="title">
           <span className="icon">📊</span>
@@ -220,6 +230,28 @@ function Calculator() {
           </div>
         </div>
       )}
+      
+      {/* FAQ Accordion Section */}
+      <div className="faq-section">
+        <h2 className="faq-title">{t('calculator.faqTitle')}</h2>
+        
+        {[1, 2, 3, 4, 5, 6].map((num) => (
+          <div key={num} className="faq-item">
+            <button 
+              className={`faq-question ${openFaq === num ? 'active' : ''}`}
+              onClick={() => toggleFaq(num)}
+            >
+              {t(`calculator.faqQ${num}`)}
+              <span className="faq-icon">{openFaq === num ? '−' : '+'}</span>
+            </button>
+            {openFaq === num && (
+              <div className="faq-answer">
+                {t(`calculator.faqA${num}`)}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

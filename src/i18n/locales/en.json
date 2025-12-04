@@ -1,6 +1,7 @@
 {
   "calculator": {
     "title": "Semester Grade Calculator",
+    "intro": "This tool is designed to automatically calculate semester grades for universities in Azerbaijan. After entering seminar, colloquium, attendance, and independent work indicators, the system calculates the final grade according to the official formula.",
     "seminar": "Seminar",
     "kollokvium": "Colloquium",
     "selectSeminarCount": "Select number of seminars:",
@@ -14,7 +15,20 @@
     "calculate": "Calculate",
     "reset": "Reset",
     "result": "Result",
-    "totalScore": "Total Score"
+    "totalScore": "Total Score",
+    "faqTitle": "Frequently Asked Questions",
+    "faqQ1": "What formula does the calculator use?",
+    "faqA1": "The calculator works according to the standard grading system of universities in Azerbaijan. Formula: (Seminar average × 0.4 + Colloquium average × 0.6) × 3 + Attendance (0-10) + Independent work (0-10). Maximum score is 50.",
+    "faqQ2": "How is the attendance score calculated?",
+    "faqA2": "The attendance system works based on absent hours. Formula: 10 - (10 × absent hours / total hours). For example: If you miss 6 hours in a 60-hour course: 10 - (10 × 6/60) = 9 points. Each absent hour reduces the score. Warning: Students who are absent 4 times with excuse or 8 times without excuse may be dismissed from the course.",
+    "faqQ3": "How are seminar and colloquium grades considered?",
+    "faqA3": "The average of seminar grades is multiplied by 0.4, while the average of colloquium grades is multiplied by 0.6. This shows that colloquiums have more weight. Then these two numbers are added and multiplied by 3 to get a maximum of 30 points.",
+    "faqQ4": "Which universities is this tool suitable for?",
+    "faqA4": "This calculator is designed for the standard grading system of universities in Azerbaijan. It is compatible with the same grading system applied at ADU, BSU, ADNSU, UNEC, and other state universities. If your university uses a different system, results may vary.",
+    "faqQ5": "How is the accuracy of calculations ensured?",
+    "faqA5": "The calculator is programmed according to official university rules. All calculations are performed locally in your browser in a transparent manner. No personal information is collected or sent to servers. You are responsible for the accuracy of the information you enter.",
+    "faqQ6": "Does it work on mobile devices?",
+    "faqA6": "Yes, the site is fully responsive and works perfectly on all devices (phone, tablet, computer). The user interface is specially optimized for mobile screens."
   },
   "footer": {
     "about": "About",

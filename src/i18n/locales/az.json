@@ -1,6 +1,7 @@
 {
   "calculator": {
     "title": "Semestr Balı Hesablama",
+    "intro": "Bu alət Azərbaycan universitetlərində semestr balını avtomatik hesablamaq üçün hazırlanıb. Seminar, kollokvium, davamiyyət və sərbəst iş göstəricilərini daxil etdikdən sonra sistem rəsmi formul üzrə yekun balı çıxarır.",
     "seminar": "Seminar",
     "kollokvium": "Kollokvium",
     "selectSeminarCount": "Seminar sayı seç:",
@@ -14,7 +15,20 @@
     "calculate": "Hesabla",
     "reset": "Sıfırla",
     "result": "Nəticə",
-    "totalScore": "Toplam Bal"
+    "totalScore": "Toplam Bal",
+    "faqTitle": "Təz-təz verilən suallar",
+    "faqQ1": "Kalkulyator hansı formuldan istifadə edir?",
+    "faqA1": "Kalkulyator Azərbaycan universitetlərinin standart qiymətləndirmə sistemi üzrə işləyir. Formul: (Seminar orta × 0.4 + Kollokvium orta × 0.6) × 3 + Davamiyyət (0-10) + Sərbəst iş (0-10). Maksimum bal 50-dir.",
+    "faqQ2": "Davamiyyət balı necə hesablanır?",
+    "faqA2": "Davamiyyət sistemi buraxılan saatlara əsasən işləyir. Formul: 10 - (10 × buraxılan saat / ümumi saat). Məsələn: 60 saatlıq fənndə 6 saat buraxsанız: 10 - (10 × 6/60) = 9 bal. Hər buraxılan saat balı azaldır. Uyarı: 4 dəfə üzürlü, 8 dəfə üzürsüz buraxan tələbə işdən kənarlаşdırıla bilər.",
+    "faqQ3": "Seminar və kollokvium balı necə nəzərə alınır?",
+    "faqA3": "Seminar ballarının ortası 0.4 əmsalla, kollokvium ballarının ortası isə 0.6 əmsalla vurulur. Bu, kollokviumun daha çox çəkiyə malik olduğunu göstərir. Sonra bu iki rəqəm toplanır və 3-ə vurulur ki, maksimum 30 bal əldə olunsun.",
+    "faqQ4": "Bu alət hansı universitetlər üçün uyğundur?",
+    "faqA4": "Bu kalkulyator Azərbaycan universitetlərinin standart qiymətləndirmə sistemi üçün hazırlanmışdır. ADU, BDU, ADNSU, UNEC və digər dövlət universitetlərində tətbiq edilən eyni qiymətləndirmə sistemi ilə uyğun gəlir. Əgər universitetiniz fərqli sistem istifadə edirsə, nəticələr fərqlənə bilər.",
+    "faqQ5": "Hesablamaların dəqiqliyi necə təmin olunur?",
+    "faqA5": "Kalkulyator rəsmi universitet qaydalarına əsasən proqramlaşdırılıb. Bütün hesablamalar şəffaf şəkildə brauzerinizdə yerli olaraq baş verir. Heç bir şəxsi məlumat toplanmır vəya serverlərə göndərilmir. Daxil etdiyiniz məlumatların düzünlüyü üçün siz cavabdehsiniz.",
+    "faqQ6": "Mobil cihazlarda işləyirmi?",
+    "faqA6": "Bəli, sayt tam responsive-dir və bütün cihazlarda (telefon, planşet, komputer) mükəmməl işləyir. İstifadəçi interfeysi mobil ekranlar üçün xüsusi optimalлаşdırılıb."
   },
   "footer": {
     "about": "Haqqında",

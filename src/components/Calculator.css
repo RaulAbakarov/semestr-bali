@@ -4,6 +4,23 @@
   margin: 0 auto;
 }
 
+/* Introduction Section */
+.intro-section {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a5568;
+  margin: 0;
+  text-align: center;
+}
+
 .card {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -423,3 +440,124 @@ label {
   }
 }
 
+/* FAQ Section */
+.faq-section {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 24px;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #cbd5e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.faq-question {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 18px 20px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.faq-question:hover {
+  background: #f7fafc;
+}
+
+.faq-question.active {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  color: #667eea;
+}
+
+.faq-icon {
+  font-size: 24px;
+  font-weight: 700;
+  color: #667eea;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  padding: 20px;
+  background: #f7fafc;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a5568;
+  border-top: 1px solid #e2e8f0;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 640px) {
+  .intro-section {
+    padding: 16px 20px;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    font-size: 14px;
+  }
+
+  .faq-section {
+    padding: 24px 20px;
+    margin-top: 32px;
+  }
+
+  .faq-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .faq-question {
+    padding: 16px;
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .faq-icon {
+    font-size: 20px;
+  }
+}
