@@ -35,15 +35,15 @@
     "intro": "Bu məxfilik siyasəti Semestr Balı Hesablama kalkulyatorunun istifadəçi məlumatlarını necə topladığını, istifadə etdiyini və qoruduğunu izah edir.",
     "section1Title": "1. Topladığımız Məlumatlar",
     "section1Content": "Biz heç bir şəxsi məlumat toplamırıq. Hesablama prosesi tamamilə brauzerinizdə yerli olaraq baş verir və heç bir məlumat serverlərimizə göndərilmir.",
-    "section2Title": "2. Cookies",
-    "section2Content": "Saytımız əsas funksionallıq üçün texniki cookies istifadə edə bilər. Bunlar heç bir şəxsi məlumat toplamır.",
+    "section2Title": "2. Cookies və Reklam",
+    "section2Content": "Saytımız əsas funksionallıq üçün texniki cookies istifadə edir. Google kimi üçüncü tərəf reklamverənlər reklamları göstərmək və saytımızdakı ziyarətləriniz haqqında məlumat toplamaq üçün cookies istifadə edirlər. İstifadəçilər şəxsiləşdirilmiş reklamlardan imtina edə bilərlər. Daha ətraflı məlumat üçün Google-un Reklam Siyasəti ilə tanış olun: https://policies.google.com/technologies/ads",
     "section3Title": "3. Üçüncü Tərəf Xidmətləri",
-    "section3Content": "Saytımızda Vercel Analytics istifadə edə bilərik ki, bu da anonim istifadə statistikası toplayır.",
+    "section3Content": "Saytımızda Google AdSense və Vercel Analytics kimi üçüncü tərəf xidmətləri istifadə edirik. Google AdSense reklamları göstərmək üçün cookies istifadə edir və anonim istifadə məlumatları toplaya bilər.",
     "section4Title": "4. Məlumat Təhlükəsizliyi",
-    "section4Content": "Heç bir şəxsi məlumat toplamadığımıza görə, məlumat pozuntusu riski yoxdur.",
+    "section4Content": "Heç bir şəxsi məlumat toplamadığımıza görə, məlumat pozuntusu riski yoxdur. Üçüncü tərəf xidmətləri öz məxfilik siyasətlərinə əməl edirlər.",
     "section5Title": "5. Dəyişikliklər",
     "section5Content": "Bu siyasətdə dəyişikliklər edə bilərik. Yeniliklər bu səhifədə dərc olunacaq.",
-    "lastUpdated": "Son yenilənmə: 28 Noyabr 2025"
+    "lastUpdated": "Son yenilənmə: 4 Dekabr 2025"
   },
   "terms": {
     "title": "İstifadə Şərtləri",

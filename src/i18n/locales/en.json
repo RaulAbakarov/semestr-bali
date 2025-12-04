@@ -35,15 +35,15 @@
     "intro": "This privacy policy explains how the Semester Grade Calculator collects, uses, and protects user data.",
     "section1Title": "1. Data We Collect",
     "section1Content": "We do not collect any personal information. The calculation process happens entirely locally in your browser, and no data is sent to our servers.",
-    "section2Title": "2. Cookies",
-    "section2Content": "Our site may use technical cookies for basic functionality. These do not collect any personal information.",
+    "section2Title": "2. Cookies and Advertising",
+    "section2Content": "Our site uses technical cookies for basic functionality. Third-party vendors, including Google, use cookies to serve ads and collect information about your visits to this site. Users can opt out of personalized advertising. For more information, visit Google's Ads Policy: https://policies.google.com/technologies/ads",
     "section3Title": "3. Third-Party Services",
-    "section3Content": "We may use Vercel Analytics on our site, which collects anonymous usage statistics.",
+    "section3Content": "We use third-party services such as Google AdSense and Vercel Analytics. Google AdSense uses cookies to display ads and may collect anonymous usage data.",
     "section4Title": "4. Data Security",
-    "section4Content": "Since we don't collect any personal information, there is no risk of data breaches.",
+    "section4Content": "Since we don't collect any personal information, there is no risk of data breaches. Third-party services follow their own privacy policies.",
     "section5Title": "5. Changes",
     "section5Content": "We may make changes to this policy. Updates will be posted on this page.",
-    "lastUpdated": "Last updated: November 28, 2025"
+    "lastUpdated": "Last updated: December 4, 2025"
   },
   "terms": {
     "title": "Terms of Service",
