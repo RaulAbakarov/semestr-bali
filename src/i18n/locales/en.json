@@ -26,7 +26,7 @@
     "faqQ3": "How are seminar and colloquium scores considered?",
     "faqA3": "The average of seminar grades is multiplied by 0.4, while the average of colloquium grades is multiplied by 0.6. This shows that colloquiums have more weight. Then these two numbers are added and multiplied by 3 to get a maximum of 30 points.",
     "faqQ4": "Which universities is this tool suitable for?",
-    "faqA4": "This calculator is designed for the standard grading system of universities in Azerbaijan. It is compatible with the same grading system applied at ADU, BSU, ADNSU, UNEC, and other state universities. If your university uses a different system, results may vary.",
+    "faqA4": "This calculator is currently designed for Baku State University (BSU). The grading system applied at other universities may differ and results may not be accurate.",
     "faqQ5": "How is the accuracy of calculations ensured?",
     "faqA5": "The calculator is programmed according to official university rules. All calculations are performed locally in your browser in a transparent manner. No personal information is collected or sent to servers. You are responsible for the accuracy of the information you enter.",
     "faqQ6": "Does it work on mobile devices?",

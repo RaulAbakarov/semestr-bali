@@ -26,7 +26,7 @@
     "faqQ3": "Seminar və kollokvium balı necə nəzərə alınır?",
     "faqA3": "Seminar ballarının ortası 0.4 əmsalla, kollokvium ballarının ortası isə 0.6 əmsalla vurulur. Bu, kollokviumun daha çox çəkiyə malik olduğunu göstərir. Sonra bu iki rəqəm toplanır və 3-ə vurulur ki, maksimum 30 bal əldə olunsun.",
     "faqQ4": "Bu alət hansı universitetlər üçün uyğundur?",
-    "faqA4": "Bu kalkulyator Azərbaycan universitetlərinin standart qiymətləndirmə sistemi üçün hazırlanmışdır. ADU, BDU, ADNSU, UNEC və digər dövlət universitetlərində tətbiq edilən eyni qiymətləndirmə sistemi ilə uyğun gəlir. Əgər universitetiniz fərqli sistem istifadə edirsə, nəticələr fərqlənə bilər.",
+    "faqA4": "Bu kalkulyator hazırda Bakı Dövlət Universiteti (BDU) üçün nəzərdə tutulub. Digər universitetlərdə tətbiq edilən qiymətləndirmə sistemi fərqli ola bilər və nəticələr dəqiq olmaya bilər.",
     "faqQ5": "Hesablamaların dəqiqliyi necə təmin olunur?",
     "faqA5": "Kalkulyator rəsmi universitet qaydalarına əsasən proqramlaşdırılıb. Bütün hesablamalar şəffaf şəkildə brauzerinizdə yerli olaraq baş verir. Heç bir şəxsi məlumat toplanmır vəya serverlərə göndərilmir. Daxil etdiyiniz məlumatların düzünlüyü üçün siz cavabdehsiniz.",
     "faqQ6": "Mobil cihazlarda işləyirmi?",
