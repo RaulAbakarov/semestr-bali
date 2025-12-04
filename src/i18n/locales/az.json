@@ -22,7 +22,7 @@
     "faqQ1": "Kalkulyator hansı formuldan istifadə edir?",
     "faqA1": "Kalkulyator Azərbaycan universitetlərinin standart qiymətləndirmə sistemi üzrə işləyir. Formul: (Seminar orta × 0.4 + Kollokvium orta × 0.6) × 3 + Davamiyyət (0-10) + Sərbəst iş (0-10). Maksimum bal 50-dir.",
     "faqQ2": "Davamiyyət balı necə hesablanır?",
-    "faqA2": "Davamiyyət sistemi qayıb saatlara əsaslanan qaydalar üzrə işləyir. Hər fənn ümumi saatına görə (30, 45, 60, 75, 90, 105) müəyyən icazə verilən qayıb limit və bal cədvəli var. Məsələn, 60 saatlıq fənndə: 1 qayıb=10 bal, 2-3 qayıb=9 bal, 4-7 qayıb=8 bal. 8 və daha çox qayıb olarsa, imtahana buraxılmırsınız. Uyarı: 4 dəfə üzürlü, 8 dəfə üzürsüz buraxan tələbə işdən kənarlaşdırıla bilər.",
+    "faqA2": "Davamiyyət sistemi qayıb saatlara əsaslanan qaydalar üzrə işləyir. Hər fənn ümumi saatına görə (30, 45, 60, 75, 90, 105) müəyyən icazə verilən qayıb limit və bal cədvəli var. Məsələn, 60 saatlıq fənndə: 1 qayıb=10 bal, 2-3 qayıb=9 bal, 4-7 qayıb=8 bal. 8 və daha çox qayıb olarsa, imtahana buraxılmırsınız.",
     "faqQ3": "Seminar və kollokvium balı necə nəzərə alınır?",
     "faqA3": "Seminar ballarının ortası 0.4 əmsalla, kollokvium ballarının ortası isə 0.6 əmsalla vurulur. Bu, kollokviumun daha çox çəkiyə malik olduğunu göstərir. Sonra bu iki rəqəm toplanır və 3-ə vurulur ki, maksimum 30 bal əldə olunsun.",
     "faqQ4": "Bu alət hansı universitetlər üçün uyğundur?",
