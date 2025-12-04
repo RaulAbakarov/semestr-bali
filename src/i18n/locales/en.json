@@ -16,6 +16,8 @@
     "reset": "Reset",
     "result": "Result",
     "totalScore": "Total Score",
+    "errorTitle": "Not Allowed to Exam",
+    "errorDescription": "You have exceeded the maximum allowed absences for this course. You are not allowed to take the exam.",
     "faqTitle": "Frequently Asked Questions",
     "faqQ1": "What formula does the calculator use?",
     "faqA1": "The calculator works according to the standard grading system of universities in Azerbaijan. Formula: (Seminar average × 0.4 + Colloquium average × 0.6) × 3 + Attendance (0-10) + Independent work (0-10). Maximum score is 50.",

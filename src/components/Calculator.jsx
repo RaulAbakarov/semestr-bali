@@ -254,8 +254,8 @@ function Calculator() {
           <div className="popup-card error-popup" onClick={(e) => e.stopPropagation()}>
             <button className="popup-close" onClick={() => setShowErrorPopup(false)}>×</button>
             <div className="error-icon">⚠️</div>
-            <h2 className="popup-title error-title">Not Allowed to Exam</h2>
-            <p className="error-description">You have exceeded the maximum allowed absences for this course. You are not allowed to take the exam.</p>
+            <h2 className="popup-title error-title">{t('calculator.errorTitle')}</h2>
+            <p className="error-description">{t('calculator.errorDescription')}</p>
           </div>
         </div>
       )}
