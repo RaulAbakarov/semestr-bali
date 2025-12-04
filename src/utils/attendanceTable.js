@@ -110,6 +110,15 @@ export function calculateAttendance(totalHours, absentHours) {
 
   const category = attendanceTable[totalHours];
   
+  // If no absences, give full 10 points
+  if (absentHours === 0) {
+    return {
+      score: 10,
+      allowedToExam: true,
+      message: 'OK'
+    };
+  }
+  
   // Check if absent hours exceed maximum allowed
   if (absentHours > category.maxAllowed) {
     return {
