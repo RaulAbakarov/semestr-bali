@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://semestr-bali.vercel.app/sitemap.xml
+Sitemap: https://semestrbali.site/sitemap.xml
