@@ -106,7 +106,7 @@ function Calculator() {
 
       <div className="card">
         <h1 className="title">
-          <span className="icon">📊</span>
+          <img src="/logo.svg" alt="" className="title-logo" />
           {t('calculator.title')}
         </h1>
 

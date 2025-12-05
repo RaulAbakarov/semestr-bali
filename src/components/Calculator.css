@@ -53,6 +53,11 @@
   gap: 12px;
 }
 
+.title-logo {
+  height: 42px;
+  width: auto;
+}
+
 .icon {
   font-size: 32px;
 }
