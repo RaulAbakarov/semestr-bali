@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-brand">
-          <span className="brand-icon">📊</span>
+          <img src="/logo.svg" alt="Semestr Balı" className="brand-logo" />
           <span className="brand-text">{t('calculator.title')}</span>
         </Link>
       </div>
