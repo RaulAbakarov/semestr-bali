@@ -181,17 +181,25 @@ function Calculator() {
   }
 
   const handleEdit = (subject) => {
+    // Set editing mode first
+    setEditingId(subject.id)
+    
     // Load subject data into form
     setSubjectName(subject.subjectName)
-    setSemCount(subject.inputs.semCount)
-    setKolCount(subject.inputs.kolCount)
-    setSemScores(subject.inputs.semScores)
-    setKolScores(subject.inputs.kolScores)
     setAbsent(subject.inputs.absent)
     setTotalHours(subject.inputs.totalHours)
     setSerbest(subject.inputs.serbest)
     setResult(subject.result)
-    setEditingId(subject.id)
+    
+    // Set counts first, then scores in next tick to avoid useEffect overwrite
+    setSemCount(subject.inputs.semCount)
+    setKolCount(subject.inputs.kolCount)
+    
+    // Use setTimeout to ensure scores are set after useEffect runs
+    setTimeout(() => {
+      setSemScores(subject.inputs.semScores)
+      setKolScores(subject.inputs.kolScores)
+    }, 0)
     
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' })
