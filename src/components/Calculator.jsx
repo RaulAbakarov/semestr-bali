@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import confetti from 'canvas-confetti'
 import { calculateAttendance } from '../utils/attendanceTable'
@@ -27,7 +27,14 @@ const loadSubjects = () => {
 
 const saveSubjects = (subjects) => {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(subjects))
+    // Use requestIdleCallback for non-blocking save
+    if (typeof requestIdleCallback !== 'undefined') {
+      requestIdleCallback(() => {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(subjects))
+      })
+    } else {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(subjects))
+    }
   } catch (error) {
     console.error('Failed to save subjects:', error)
   }
@@ -69,17 +76,21 @@ function Calculator() {
     setKolScores(Array(kolCount).fill(''))
   }, [kolCount])
 
-  const handleSemScoreChange = (index, value) => {
-    const newScores = [...semScores]
-    newScores[index] = value
-    setSemScores(newScores)
-  }
+  const handleSemScoreChange = useCallback((index, value) => {
+    setSemScores(prev => {
+      const newScores = [...prev]
+      newScores[index] = value
+      return newScores
+    })
+  }, [])
 
-  const handleKolScoreChange = (index, value) => {
-    const newScores = [...kolScores]
-    newScores[index] = value
-    setKolScores(newScores)
-  }
+  const handleKolScoreChange = useCallback((index, value) => {
+    setKolScores(prev => {
+      const newScores = [...prev]
+      newScores[index] = value
+      return newScores
+    })
+  }, [])
 
   const hesabla = () => {
     const semTotal = semScores.reduce((sum, score) => sum + (Number(score) || 0), 0)
@@ -116,10 +127,13 @@ function Calculator() {
     setShowPopup(true)
 
     if (totalPoint >= 45) {
+      // Reduce particle count on mobile for better performance
+      const isMobile = window.innerWidth < 768
       confetti({
-        particleCount: 200,
+        particleCount: isMobile ? 100 : 200,
         spread: 90,
-        origin: { y: 0.6 }
+        origin: { y: 0.6 },
+        disableForReducedMotion: true
       })
     }
 
@@ -180,7 +194,7 @@ function Calculator() {
     setEditingId(null)
   }
 
-  const handleEdit = (subject) => {
+  const handleEdit = useCallback((subject) => {
     // Set editing mode first
     setEditingId(subject.id)
     
@@ -203,28 +217,33 @@ function Calculator() {
     
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+  }, [])
 
-  const handleDelete = (id) => {
-    const updatedSubjects = savedSubjects.filter(subject => subject.id !== id)
-    setSavedSubjects(updatedSubjects)
-    saveSubjects(updatedSubjects)
+  const handleDelete = useCallback((id) => {
+    setSavedSubjects(prev => {
+      const updatedSubjects = prev.filter(subject => subject.id !== id)
+      saveSubjects(updatedSubjects)
+      return updatedSubjects
+    })
     
     // If deleting currently edited subject, exit editing mode
-    if (editingId === id) {
-      setSubjectName('')
-      setEditingId(null)
-    }
-  }
+    setEditingId(prevId => {
+      if (prevId === id) {
+        setSubjectName('')
+        return null
+      }
+      return prevId
+    })
+  }, [])
 
-  const handleClearAll = () => {
+  const handleClearAll = useCallback(() => {
     if (window.confirm(t('calculator.confirmClearAll') || 'Are you sure you want to delete all saved subjects?')) {
       setSavedSubjects([])
       localStorage.removeItem(STORAGE_KEY)
       setSubjectName('')
       setEditingId(null)
     }
-  }
+  }, [t])
 
   return (
     <div className="calculator-wrapper">

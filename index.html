@@ -64,5 +64,23 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Optimize event listeners for better INP
+      if ('addEventListener' in window) {
+        let supportsPassive = false;
+        try {
+          const opts = Object.defineProperty({}, 'passive', {
+            get: function() { supportsPassive = true; }
+          });
+          window.addEventListener('test', null, opts);
+          window.removeEventListener('test', null, opts);
+        } catch (e) {}
+        if (supportsPassive) {
+          window.addEventListener('touchstart', function(){}, {passive: true});
+          window.addEventListener('touchmove', function(){}, {passive: true});
+          window.addEventListener('scroll', function(){}, {passive: true});
+        }
+      }
+    </script>
   </body>
 </html>
