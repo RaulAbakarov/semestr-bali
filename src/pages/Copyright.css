@@ -24,3 +24,14 @@
   color: #2d3748;
   font-weight: 600;
 }
+
+.dmca-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.dmca-badge img {
+  max-width: 200px;
+  height: auto;
+}
