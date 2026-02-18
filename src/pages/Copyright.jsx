@@ -75,7 +75,7 @@ function Copyright() {
             rel="noopener noreferrer"
           >
             <img
-              src="https://images.dmca.com/Badges/dmca-badge-w100-2x1-04.png?ID=7fc4d570-28c3-4daa-873b-93657c6a4c1f"
+              src="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=7fc4d570-28c3-4daa-873b-93657c6a4c1f"
               alt="DMCA.com Protection Status"
             />
           </a>
