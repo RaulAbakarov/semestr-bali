@@ -65,10 +65,10 @@ function Copyright() {
           <h2>{t('copyright.section9Title')}</h2>
           <p>{t('copyright.section9Content')}</p>
         </section>
-
         <section className="dmca-section">
+          
           <a
-            href="//www.dmca.com/Protection/Status.aspx?ID=7fc4d570-28c3-4daa-873b-93657c6a4c1f"
+            href="https://www.dmca.com/Protection/Status.aspx?ID=7fc4d570-28c3-4daa-873b-93657c6a4c1f&refurl=https://www.semestrbali.site/"
             title="DMCA.com Protection Status"
             className="dmca-badge"
             target="_blank"
