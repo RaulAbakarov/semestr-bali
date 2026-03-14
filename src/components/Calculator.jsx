@@ -269,6 +269,7 @@ function Calculator() {
               className="input"
               placeholder={t('calculator.subjectNamePlaceholder')}
             />
+            <p className="subject-name-description">{t('calculator.subjectNameDescription')}</p>
             {editingId && (
               <div className="editing-badge">{t('calculator.editingMode')}</div>
             )}

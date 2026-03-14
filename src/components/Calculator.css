@@ -674,6 +674,13 @@ label {
   margin-bottom: 0;
 }
 
+.subject-name-description {
+  margin: 8px 0 0 0;
+  font-size: 13px;
+  color: #718096;
+  line-height: 1.5;
+}
+
 .editing-badge {
   display: inline-block;
   margin-top: 8px;

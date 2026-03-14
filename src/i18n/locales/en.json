@@ -20,6 +20,7 @@
     "errorDescription": "You have exceeded the maximum allowed absences for this course. You are not allowed to take the exam.",
     "subjectName": "Subject name (optional)",
     "subjectNamePlaceholder": "e.g.: Mathematics, Physics...",
+    "subjectNameDescription": "If you enter a subject name, the result will be saved automatically.",
     "savedSubjects": "Saved Subjects",
     "clearAll": "Clear All",
     "edit": "Edit",

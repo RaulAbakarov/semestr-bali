@@ -20,6 +20,7 @@
     "errorDescription": "Bu fənn üzrə icazə verilən qayıb limitini keçmisiniz. İmtahana buraxılmırsınız.",
     "subjectName": "Fənn adı (istəyə bağlı)",
     "subjectNamePlaceholder": "Məsələn: Riyaziyyat, Fizika...",
+    "subjectNameDescription": "Fənnin adını yazsanız, nəticə avtomatik yadda saxlanılacaq.",
     "savedSubjects": "Saxlanılmış Fənlər",
     "clearAll": "Hamısını Sil",
     "edit": "Redaktə et",
