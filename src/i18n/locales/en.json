@@ -39,7 +39,13 @@
     "faqQ5": "How is the accuracy of calculations ensured?",
     "faqA5": "The calculator is programmed according to official university rules. All calculations are performed locally in your browser in a transparent manner. No personal information is collected or sent to servers. You are responsible for the accuracy of the information you enter.",
     "faqQ6": "Does it work on mobile devices?",
-    "faqA6": "Yes, the site is fully responsive and works perfectly on all devices (phone, tablet, computer). The user interface is specially optimized for mobile screens."
+    "faqA6": "Yes, the site is fully responsive and works perfectly on all devices (phone, tablet, computer). The user interface is specially optimized for mobile screens.",
+    "seoTitle": "BSU Grade Calculator — Semester Grade Calculator",
+    "seoText1": "The semester grade calculator is a free online tool specially designed for Baku State University (BSU) students. At BSU, the final grade for each semester is formed based on seminar, colloquium, attendance, and independent work indicators. With this grade calculator, you can enter all these indicators and find out your final semester grade in seconds.",
+    "seoFormulaTitle": "BSU Semester Grade Calculation Formula",
+    "seoFormulaText": "The BSU grade calculation formula is: final grade = (Seminar average × 0.4 + Colloquium average × 0.6) × 3 + Attendance score (0-10) + Independent work score (0-10). Thus, the maximum semester grade is 50. This 50 points is the internal assessment; the exam score is calculated separately.",
+    "seoHowTitle": "How to Use the Grade Calculator?",
+    "seoHowText": "Enter your seminar and colloquium scores in the appropriate fields, specify the total course hours and your absent hours, enter your independent work score, and press the 'Calculate' button. The system will automatically calculate your semester grade according to BSU's official rules."
   },
   "footer": {
     "about": "About",

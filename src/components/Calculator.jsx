@@ -458,10 +458,10 @@ function Calculator() {
       {/* FAQ Accordion Section */}
       <div className="faq-section">
         <h2 className="faq-title">{t('calculator.faqTitle')}</h2>
-        
+
         {[1, 2, 3, 4, 5, 6].map((num) => (
           <div key={num} className="faq-item">
-            <button 
+            <button
               className={`faq-question ${openFaq === num ? 'active' : ''}`}
               onClick={() => toggleFaq(num)}
             >
@@ -475,6 +475,16 @@ function Calculator() {
             )}
           </div>
         ))}
+      </div>
+
+      {/* SEO Content Section */}
+      <div className="seo-content-section">
+        <h2>{t('calculator.seoTitle')}</h2>
+        <p>{t('calculator.seoText1')}</p>
+        <h3>{t('calculator.seoFormulaTitle')}</h3>
+        <p>{t('calculator.seoFormulaText')}</p>
+        <h3>{t('calculator.seoHowTitle')}</h3>
+        <p>{t('calculator.seoHowText')}</p>
       </div>
     </div>
   )

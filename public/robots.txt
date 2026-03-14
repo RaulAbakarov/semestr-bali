@@ -1,5 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
+Allow: /faq
+Allow: /contact
+Disallow: /privacy
+Disallow: /terms
+Disallow: /copyright
 
-Sitemap: https://semestrbali.site/sitemap.xml
+Sitemap: https://www.semestrbali.site/sitemap.xml
