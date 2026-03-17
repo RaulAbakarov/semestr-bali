@@ -46,7 +46,11 @@
     "seoFormulaTitle": "BSU Semester Grade Calculation Formula",
     "seoFormulaText": "The BSU grade calculation formula is: final grade = (Seminar average × 0.4 + Colloquium average × 0.6) × 3 + Attendance score (0-10) + Independent work score (0-10). Thus, the maximum semester grade is 50. This 50 points is the internal assessment; the exam score is calculated separately.",
     "seoHowTitle": "How to Use the Grade Calculator?",
-    "seoHowText": "Enter your seminar and colloquium scores in the appropriate fields, specify the total course hours and your absent hours, enter your independent work score, and press the 'Calculate' button. The system will automatically calculate your semester grade according to BSU's official rules."
+    "seoHowText": "Enter your seminar and colloquium scores in the appropriate fields, specify the total course hours and your absent hours, enter your independent work score, and press the 'Calculate' button. The system will automatically calculate your semester grade according to BSU's official rules. You can save results with subject names and calculate for multiple subjects.",
+    "seoAttendanceTitle": "How Attendance Score is Calculated",
+    "seoAttendanceText": "At BSU, the attendance score is calculated using a special table. Different rules apply depending on the total course hours (30, 45, 60, 75, 90, 105 hours). With few absences you get the maximum 10 points, while more absences reduce the score. Beyond a certain threshold, students are not allowed to take the exam. This calculator uses BSU's official attendance table.",
+    "seoWhyTitle": "Why This Semester Grade Calculator?",
+    "seoWhyText": "This semester grade calculator is fully aligned with BSU's official grading system. All calculations happen in your browser — no personal data is collected or sent to servers. Works with equal accuracy on mobile, tablet, and desktop. Available in Azerbaijani, English, and Russian."
   },
   "footer": {
     "about": "About",

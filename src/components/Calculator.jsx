@@ -246,13 +246,13 @@ function Calculator() {
   }, [t])
 
   return (
-    <div className="calculator-wrapper">
+    <main className="calculator-wrapper" role="main">
       {/* Introduction Section */}
-      <div className="intro-section">
+      <section className="intro-section" aria-label="Giriş">
         <p className="intro-text">{t('calculator.intro')}</p>
-      </div>
+      </section>
 
-      <div className="card">
+      <article className="card" itemScope itemType="https://schema.org/WebApplication">
         <h1 className="title">
           <img src="/logo.svg" alt="" className="title-logo" />
           {t('calculator.title')}
@@ -397,12 +397,12 @@ function Calculator() {
         </div>
 
         {result !== null && (
-          <div className="result">
+          <section className="result" aria-live="polite">
             <div className="result-label">{t('calculator.totalScore')}</div>
             <div className="result-score">{result}</div>
-          </div>
+          </section>
         )}
-      </div>
+      </article>
 
       {showPopup && (
         <div className="popup-overlay" onClick={() => setShowPopup(false)}>
@@ -457,37 +457,40 @@ function Calculator() {
       )}
       
       {/* FAQ Accordion Section */}
-      <div className="faq-section">
+      <section className="faq-section" aria-label="Tez-tez verilən suallar" itemScope itemType="https://schema.org/FAQPage">
         <h2 className="faq-title">{t('calculator.faqTitle')}</h2>
 
         {[1, 2, 3, 4, 5, 6].map((num) => (
-          <div key={num} className="faq-item">
+          <div key={num} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
             <button
               className={`faq-question ${openFaq === num ? 'active' : ''}`}
               onClick={() => toggleFaq(num)}
+              aria-expanded={openFaq === num}
             >
-              {t(`calculator.faqQ${num}`)}
+              <span itemProp="name">{t(`calculator.faqQ${num}`)}</span>
               <span className="faq-icon">{openFaq === num ? '−' : '+'}</span>
             </button>
-            {openFaq === num && (
-              <div className="faq-answer">
-                {t(`calculator.faqA${num}`)}
-              </div>
-            )}
+            <div className={`faq-answer ${openFaq === num ? 'faq-answer-open' : 'faq-answer-closed'}`} itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+              <span itemProp="text">{t(`calculator.faqA${num}`)}</span>
+            </div>
           </div>
         ))}
-      </div>
+      </section>
 
       {/* SEO Content Section */}
-      <div className="seo-content-section">
+      <section className="seo-content-section" aria-label="SEO məlumat">
         <h2>{t('calculator.seoTitle')}</h2>
         <p>{t('calculator.seoText1')}</p>
         <h3>{t('calculator.seoFormulaTitle')}</h3>
         <p>{t('calculator.seoFormulaText')}</p>
         <h3>{t('calculator.seoHowTitle')}</h3>
         <p>{t('calculator.seoHowText')}</p>
-      </div>
-    </div>
+        <h3>{t('calculator.seoAttendanceTitle')}</h3>
+        <p>{t('calculator.seoAttendanceText')}</p>
+        <h3>{t('calculator.seoWhyTitle')}</h3>
+        <p>{t('calculator.seoWhyText')}</p>
+      </section>
+    </main>
   )
 }
 

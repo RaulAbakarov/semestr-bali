@@ -565,7 +565,21 @@ label {
   line-height: 1.7;
   color: #4a5568;
   border-top: 1px solid #e2e8f0;
-  animation: slideDown 0.3s ease;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+}
+
+.faq-answer-open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.faq-answer-closed {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  border-top: none;
 }
 
 @keyframes slideDown {

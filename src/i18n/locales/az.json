@@ -1,7 +1,7 @@
 {
   "calculator": {
     "title": "Semestr Balı Hesablama",
-    "intro": "BDU bal hesablama kalkulyatoru — Bakı Dövlət Universitetində semestr balını avtomatik hesablamaq üçün hazırlanıb. Seminar, kollokvium, davamiyyət və sərbəst iş göstəricilərini daxil edin, sistem rəsmi formul üzrə yekun balınızı dərhal hesablasın. Pulsuz onlayn bal hesablama aləti.",
+    "intro": "Semestr balı hesablama kalkulyatoru — Bakı Dövlət Universitetində (BDU) semestr balını dəqiq və avtomatik hesablamaq üçün hazırlanıb. Seminar, kollokvium, davamiyyət və sərbəst iş göstəricilərini daxil edin, BDU-nun rəsmi formulu üzrə yekun semestr balınızı dərhal öyrənin. Pulsuz onlayn bal hesablama aləti — 2025-2026 tədris ili üçün yenilənib.",
     "seminar": "Seminar",
     "kollokvium": "Kollokvium",
     "selectSeminarCount": "Seminar sayı seç:",
@@ -41,12 +41,16 @@
     "faqA5": "Bəli, kalkulyator rəsmi BDU qaydalarına əsasən proqramlaşdırılıb. Bütün bal hesablama əməliyyatları şəffaf şəkildə brauzerinizdə yerli olaraq baş verir. Heç bir şəxsi məlumat toplanmır vəya serverlərə göndərilmir.",
     "faqQ6": "Mobil cihazlarda işləyirmi?",
     "faqA6": "Bəli, sayt tam responsive-dir və bütün cihazlarda (telefon, planşet, komputer) mükəmməl işləyir. İstifadəçi interfeysi mobil ekranlar üçün xüsusi optimallaşdırılıb.",
-    "seoTitle": "BDU Bal Hesablama — Semestr Balı Kalkulyatoru",
-    "seoText1": "Semestr balı hesablama kalkulyatoru Bakı Dövlət Universiteti (BDU) tələbələri üçün xüsusi olaraq hazırlanmış pulsuz onlayn alətdir. BDU-da hər semestr ərzində tələbələrin yekun balı seminar, kollokvium, davamiyyət və sərbəst iş göstəricilərinə əsasən formalaşır. Bu bal hesablama aləti ilə bütün bu göstəriciləri daxil edib yekun semestr balınızı bir neçə saniyə ərzində öyrənə bilərsiniz.",
+    "seoTitle": "Semestr Balı Hesablama — BDU Bal Hesablama Kalkulyatoru",
+    "seoText1": "Semestr balı hesablama kalkulyatoru Bakı Dövlət Universiteti (BDU) tələbələri üçün xüsusi olaraq hazırlanmış ən dəqiq pulsuz onlayn alətdir. BDU-da hər semestr ərzində tələbələrin yekun balı seminar, kollokvium, davamiyyət və sərbəst iş göstəricilərinə əsasən formalaşır. Bu bal hesablama aləti ilə bütün bu göstəriciləri daxil edib yekun semestr balınızı bir neçə saniyə ərzində hesablaya bilərsiniz. Həm bakalavr, həm magistr tələbələri üçün uyğundur.",
     "seoFormulaTitle": "BDU Semestr Balı Hesablama Formulası",
-    "seoFormulaText": "BDU-da bal hesablama formulası belədir: yekun bal = (Seminar ortası × 0.4 + Kollokvium ortası × 0.6) × 3 + Davamiyyət balı (0-10) + Sərbəst iş balı (0-10). Beləliklə, maksimum semestr balı 50-dir. Bu 50 bal daxili qiymətləndirmədir, imtahan balı isə ayrıca hesablanır.",
+    "seoFormulaText": "BDU-da bal hesablama formulası belədir: yekun bal = (Seminar ortası × 0.4 + Kollokvium ortası × 0.6) × 3 + Davamiyyət balı (0-10) + Sərbəst iş balı (0-10). Beləliklə, maksimum semestr balı 50-dir. Bu 50 bal daxili qiymətləndirmədir, imtahan balı isə ayrıca hesablanır. Seminar əmsalı 0.4, kollokvium əmsalı 0.6 olduğuna görə, kollokvium balları semestr balına daha çox təsir edir.",
     "seoHowTitle": "Bal Hesablama Necə İstifadə Olunur?",
-    "seoHowText": "Seminar və kollokvium ballarınızı uyğun xanalara yazın, dərsin ümumi saatını və buraxdığınız saatları göstərin, sərbəst iş balınızı daxil edin və «Hesabla» düyməsini basın. Sistem avtomatik olaraq BDU-nun rəsmi qaydalarına uyğun şəkildə semestr balınızı hesablayacaq."
+    "seoHowText": "Seminar və kollokvium ballarınızı uyğun xanalara yazın, dərsin ümumi saatını və buraxdığınız saatları göstərin, sərbəst iş balınızı daxil edin və «Hesabla» düyməsini basın. Sistem avtomatik olaraq BDU-nun rəsmi qaydalarına uyğun şəkildə semestr balınızı hesablayacaq. Nəticəni fənn adı ilə saxlaya və birdən çox fənn üçün istifadə edə bilərsiniz.",
+    "seoAttendanceTitle": "Davamiyyət Balı Hesablama Qaydası",
+    "seoAttendanceText": "BDU-da davamiyyət balı xüsusi cədvəllə hesablanır. Fənnin ümumi dərs saatına görə (30, 45, 60, 75, 90, 105 saat) fərqli qaydalar tətbiq olunur. Az qayıb olduqda maksimum 10 bal, çox qayıb olduqda isə bal azalır. Müəyyən həddi keçdikdə tələbə imtahana buraxılmır. Bu kalkulyator BDU-nun rəsmi davamiyyət cədvəlinə əsaslanır.",
+    "seoWhyTitle": "Niyə Bu Semestr Balı Hesablama Aləti?",
+    "seoWhyText": "Bu semestr balı hesablama kalkulyatoru BDU-nun rəsmi qiymətləndirmə sisteminə tam uyğundur. Bütün hesablamalar brauzerinizdə baş verir — heç bir şəxsi məlumat toplanmır və ya serverlərə göndərilmir. Mobil, planşet və kompüterdə eyni dəqiqliklə işləyir. Azərbaycan, ingilis və rus dillərində istifadə etmək mümkündür."
   },
   "footer": {
     "about": "Haqqında",
