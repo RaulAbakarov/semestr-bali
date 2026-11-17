@@ -11,10 +11,10 @@
       "has": [
         {
           "type": "host",
-          "value": "semestrbali.site"
+          "value": "semestrbali.online"
         }
       ],
-      "destination": "https://www.semestrbali.site/$1",
+      "destination": "https://www.semestrbali.online/$1",
       "permanent": true
     }
   ],
