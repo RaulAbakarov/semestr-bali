@@ -1,7 +1,7 @@
 {
   "calculator": {
     "title": "Semestr Balı Hesablama",
-    "intro": "Semestr balı hesablama kalkulyatoru — Bakı Dövlət Universitetində (BDU) semestr balını dəqiq və avtomatik hesablamaq üçün hazırlanıb. Seminar, kollokvium, davamiyyət və sərbəst iş göstəricilərini daxil edin, BDU-nun rəsmi formulu üzrə yekun semestr balınızı dərhal öyrənin. Pulsuz onlayn bal hesablama aləti — 2025-2026 tədris ili üçün yenilənib.",
+    "intro": "Semestr balı hesablama kalkulyatoru — Bakı Dövlət Universitetində (BDU) semestr balını dəqiq və avtomatik hesablamaq üçün hazırlanıb. Seminar, kollokvium, davamiyyət və sərbəst iş göstəricilərini daxil edin, BDU-nun rəsmi formulu üzrə yekun semestr balınızı dərhal öyrənin. Pulsuz onlayn bal hesablama aləti — 2026-2027 tədris ili üçün yenilənib.",
     "seminar": "Seminar",
     "kollokvium": "Kollokvium",
     "selectSeminarCount": "Seminar sayı seç:",
