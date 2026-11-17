@@ -7,4 +7,4 @@ Disallow: /privacy
 Disallow: /terms
 Disallow: /copyright
 
-Sitemap: https://www.semestrbali.site/sitemap.xml
+Sitemap: https://www.semestrbali.online/sitemap.xml
